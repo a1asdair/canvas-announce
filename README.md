@@ -26,7 +26,7 @@ These should be entered in plain text.
 Example:  
 ```First Teaching Day this Saturday```
 ### Announcement text
-These shoudl be entered using html tags.  This allows links and some basic formatting of messages.  
+These should be entered using html tags.  This allows links and some basic formatting of messages.  
 Example:  
 ```html
 <p>Just a quick reminder about the upcoming Day 3 this Saturday 4th November.  Please do try and download the files in advance of the class if you can.  We will begin at 10:15am as usual in 2Y5.</p>
@@ -36,5 +36,5 @@ Example:
 These need to be entered in the format YYYY-MM-DDTHH:MM:SS
 Note that years are four digits, months and days are two digits (i.e. include leading zeroes) and the time is in the 24 clock (include leading zeroes). Note also the character 'T' separating the date and the time.  
 Examples:  
-```2018-11-29T15:00:00```
+```2018-11-29T15:00:00```  
 ```2018-12-10T10:00:00```
