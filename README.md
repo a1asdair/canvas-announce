@@ -12,8 +12,8 @@ This is a simple routine to support the editing and scheduling of announcements 
 * Check that the announcements listed, and their schedule, match your ```announcements.csv``` file.  
 
 ## File descriptions  
-*canvas-announce.py* is the Python source code for the program. You can donwload and run this in your own Python environment.  
-*canvas-announce.exe* is a standalone executable file for Windows PC, compiled using PyInstaller, that can be downloaded and run without needing a Python installation.  
+* *canvas-announce.py* is the Python source code for the program. You can donwload and run this in your own Python environment.  
+* *canvas-announce.exe* is a standalone executable file for Windows PC, compiled using PyInstaller, that can be downloaded and run without needing a Python installation.  
 
 ## What is the program doing?
 This program parses and edits a course export package from Canvas to allow you to more easily edit and schedule course announcements. It requires a course export in .imscc format. It identifies announcements within that package, and summarises them in a CSV file for editing. Once ypou have edited the announcements, it then re-packages them back into the .imscc file for re-importing to Canvas. It only edits the announcement files, and all other files are retained unedited.  
