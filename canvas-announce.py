@@ -263,7 +263,7 @@ if os.path.isfile(outputpath + 'announcements.csv'):
 	os.rename(outputpath + 'announcements.csv', outputpath + 'announcements-edit-' + str(time.gmtime().tm_hour) + '-' + str(time.gmtime().tm_min) + '_' + str(time.gmtime().tm_mday) + '-' + str(time.gmtime().tm_mon) + '-' + str(time.gmtime().tm_year)+ '.csv')
 
 	# Tidy up
-	sleep(2)
+	sleep(4)
 	try:
 	    shutil.rmtree(outputpath + 'temp/')
 	except OSError as e:
