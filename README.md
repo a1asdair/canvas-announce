@@ -15,7 +15,11 @@ This is a simple routine to support the editing and scheduling of announcements 
 *canvas-announce.exe* is a standalone executable file for Windows PC, compiled using PyInstaller, that can be downloaded and run without needing a Python installation.
 
 ## What is the program doing?
-This program parses and edits a course export package from Canvas to allow you to more easily edit and schedule course announcements. It requires a course export in .imscc format. It identifies announcements within that package, and summarises them in a CSV file for editing. Once ypou have edited the announcements, it then re-packages them back into the .imscc file for re-importing to Canvas. It only edits the announcement files, and all other files are retained unedited.
+This program parses and edits a course export package from Canvas to allow you to more easily edit and schedule course announcements. It requires a course export in .imscc format. It identifies announcements within that package, and summarises them in a CSV file for editing. Once ypou have edited the announcements, it then re-packages them back into the .imscc file for re-importing to Canvas. It only edits the announcement files, and all other files are retained unedited.  
+
+When you run the program there must be only one .imscc file in the folder.  If more than one is present (e.g. an import file form a previous run) the program will quit with an error as it is ambigous which file is to be used for the extract.  
+
+The program leaves the original course package unedited, and saves a new one with the prefix 'IMPORT_'. It also renames the edited announcements.csv to appnend the date and time to avoid accidnetal overwrites.  if you want to re-use a previous announcements.csv file just rename it to its original ```announcements.csv```. The program does create soime temporary files while running, but these are deleted again on completion.
 
 ## Limitations
 The program does not currently allow you to create new course packages, or to add announcements to a course package.  It only allows the editing (or removal) of existing announcements that you have exported from a course.
