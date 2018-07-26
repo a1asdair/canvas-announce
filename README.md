@@ -40,7 +40,7 @@ Example:
 These should be entered using html tags.  This allows links and some basic formatting of messages.  
 Example:  
 ```html
-<p>Just a quick reminder about the upcoming Day 3 this Saturday 4th November.  Please do try and download the files in advance of the class if you can.  We will begin at 10:15am as usual in 2Y5.</p>
+<p>Just a quick reminder about the upcoming Day 3 this Saturday 4th November. We will begin at 10:15am as usual in 2Y5.</p>
 <p>See you all on Saturday.</p>
 ```
 ### Delay dates
