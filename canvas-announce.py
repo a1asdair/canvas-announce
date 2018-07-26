@@ -1,3 +1,16 @@
+# ----------------------------------------------
+#
+# canvas-announce.py
+# A package for editing and scheduling Announcements in
+# Canvas courses/modules.
+# Professor Alasdair Rutherford
+# University of Stirling
+# (c) 2018 
+# Documentation available at https://github.com/a1asdair/canvas-announce
+
+# Created:		25th July 2018
+# Last edited:	26th July 2018 
+
 
 import time
 from time import sleep
@@ -80,7 +93,8 @@ def findannouncements(zipf, filelist, outputpath):
 		writer.writeheader()
 		for row in anndict:
 			writer.writerow(anndict[row])
-	print('| Announcements extracted and saved in', outputpath + 'announcements.csv ready for editing.')
+	print('| Announcements extracted and saved in')
+	print('|' + outputpath + 'announcements.csv ready for editing.')
 
 
 def outputeditedannouncements(zf, filelist, outputpath):
@@ -207,7 +221,8 @@ def saveeditedzipfile(zin, editedfilelist, metalist, outputpath, zipname):
 				editedfile.close()
 			for item in metalist:
 				zout.writestr(item, zin.read(item))
-	print('| ZIP file saved to', outputpath + 'IMPORT_' + zipname, 'ready to be imported into Canvas.')
+	print('| ZIP file saved to', outputpath + 'IMPORT_' + zipname)
+	print('| ready to be imported into Canvas.')
 
 
 
@@ -244,6 +259,9 @@ def printheader():
 
 if os.path.isfile(outputpath + 'announcements.csv'):
 
+	# This triggers on the second running, when an announcements.csv
+	# file has been created and edited.
+
 	printheader()
 
 	zippath, zipname = findzipfile(outputpath)
@@ -275,6 +293,9 @@ if os.path.isfile(outputpath + 'announcements.csv'):
 	print('|____________________________________________')
 
 else:
+
+	# This triggers on the first run, to extract Announcements
+	# and create the announcements.csv file.
 
 	printheader()
 
