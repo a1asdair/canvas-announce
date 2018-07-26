@@ -19,7 +19,13 @@ This program parses and edits a course export package from Canvas to allow you t
 
 When you run the program there must be only one .imscc file in the folder.  If more than one is present (e.g. an import file form a previous run) the program will quit with an error as it is ambigous which file is to be used for the extract.  
 
-The program leaves the original course package unedited, and saves a new one with the prefix 'IMPORT_'. It also renames the edited announcements.csv to appnend the date and time to avoid accidnetal overwrites.  if you want to re-use a previous announcements.csv file just rename it to its original ```announcements.csv```. The program does create soime temporary files while running, but these are deleted again on completion.
+The program leaves the original course package unedited, and saves a new one with the prefix 'IMPORT_'. It also renames the edited announcements.csv to appnend the date and time to avoid accidnetal overwrites.  if you want to re-use a previous announcements.csv file just rename it to its original ```announcements.csv```. The program does create soime temporary files while running, but these are deleted again on completion.  
+
+## Exporting a Course from Canvas
+You need to export your course content as an .imscc file.  You can find instructions on how to do that [here](https://community.canvaslms.com/docs/DOC-12785-415241323).  
+
+## Importing a Course to Canvas
+Importing the edited course package is similar to exporting.  The difference is that you only import selected content i.e. the announcements. Of course, as the rest of the package is unchanged, if you know you want to import other elements alongside the announcements that's ok.  You can find instructions on importing course pacakages [here](https://community.canvaslms.com/docs/DOC-10713-67952724501), but make sure you [import selected content](https://community.canvaslms.com/docs/DOC-13101-4152497985). 
 
 ## Limitations
 The program does not currently allow you to create new course packages, or to add announcements to a course package.  It only allows the editing (or removal) of existing announcements that you have exported from a course.
